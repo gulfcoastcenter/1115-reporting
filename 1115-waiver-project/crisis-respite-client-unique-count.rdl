@@ -25,6 +25,9 @@
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!startdate.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@QualifyingSac">
+            <Value>=Parameters!QualifyingSac.Value</Value>
+          </QueryParameter>
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!enddate.Value</Value>
           </QueryParameter>
@@ -359,6 +362,12 @@
         </Values>
       </DefaultValue>
       <Prompt>crisis Respite Ru</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="QualifyingSac">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>Qualifying Sac</Prompt>
       <Hidden>true</Hidden>
     </ReportParameter>
     <ReportParameter Name="startdate">

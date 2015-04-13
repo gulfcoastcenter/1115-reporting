@@ -25,6 +25,9 @@
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@QualifyingSac">
+            <Value>=Parameters!QualifyingSac.Value</Value>
+          </QueryParameter>
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
@@ -366,6 +369,12 @@
       <Prompt>Event Ru</Prompt>
       <Hidden>true</Hidden>
       <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="QualifyingSac">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>Qualifying Sac</Prompt>
+      <Hidden>true</Hidden>
     </ReportParameter>
     <ReportParameter Name="StartDate">
       <DataType>DateTime</DataType>

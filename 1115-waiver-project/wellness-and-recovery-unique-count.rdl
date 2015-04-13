@@ -25,6 +25,9 @@
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@QualifyingSac">
+            <Value>=Parameters!QualifyingSac.Value</Value>
+          </QueryParameter>
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
@@ -385,6 +388,17 @@
         </Values>
       </DefaultValue>
       <Prompt>End Date</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QualifyingSac">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value>480,1500,1501,2201,2202,2203,2204,2205,460</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qualifying Sac</Prompt>
+      <Hidden>true</Hidden>
     </ReportParameter>
   </ReportParameters>
   <Width>2in</Width>
