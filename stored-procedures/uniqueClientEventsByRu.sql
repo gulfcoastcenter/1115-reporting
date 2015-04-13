@@ -14,7 +14,7 @@ as
 	)
 	and EventDate between @startdate and @enddate
         and Attendance in ('1', '2', '3')
-        and Recipient in ('1,', '4', '5', '6')
+        and Recipient in ('1', '4', '5', '6')
         and Location not in ('8')
         and ClientDur > '0'
 go
