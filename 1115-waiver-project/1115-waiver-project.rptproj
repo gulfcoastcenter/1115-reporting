@@ -9,6 +9,10 @@
   </DataSources>
   <Reports>
     <ProjectItem>
+      <Name>admit-in-each-year.rdl</Name>
+      <FullPath>admit-in-each-year.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>adult-mh-crisis-respite-unique-count.rdl</Name>
       <FullPath>adult-mh-crisis-respite-unique-count.rdl</FullPath>
     </ProjectItem>
@@ -133,6 +137,10 @@
       <FullPath>smoking-cessation-unique-count.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>super-user-detail.rdl</Name>
+      <FullPath>super-user-detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>telemed-access-unique-count.rdl</Name>
       <FullPath>telemed-access-unique-count.rdl</FullPath>
     </ProjectItem>
@@ -149,12 +157,8 @@
       <FullPath>wrap-unique-count.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>super-user-detail.rdl</Name>
-      <FullPath>super-user-detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>admit-in-each-year.rdl</Name>
-      <FullPath>admit-in-each-year.rdl</FullPath>
+      <Name>welness-clients-with-fundsource.rdl</Name>
+      <FullPath>welness-clients-with-fundsource.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
