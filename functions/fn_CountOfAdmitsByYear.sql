@@ -1,6 +1,6 @@
 
 /*
-exec fn_CountOfAdmitsByYear 'RHSPA1', '1/1/2012', '1/1/2015'
+select * from fn_CountOfAdmitsByYear ('RHSPA1', '1/1/2012', '1/1/2015')
 */
 
 if OBJECT_ID('fn_CountOfAdmitsByYear') is not null
