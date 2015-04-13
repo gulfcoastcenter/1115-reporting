@@ -1,6 +1,8 @@
 
 /*
-exec sp_superUserDetail 'RHSPA1', 3, '4300', .25, '1/1/2012', '1/1/2015'
+exec sp_superUserDetail 'RHSPA1', 2, '4299,4300,4451,4452', .25, '1/1/2012', '1/1/2015'
+exec sp_superUserDetail 'RHSPA1', 2, '4299,4300,4451,4452', 0, '1/1/2012', '1/1/2015'
+
 */
 
 go
@@ -18,7 +20,7 @@ create procedure sp_superUserDetail (
 )
 as
 select a.clientid, a.[total admits], a.[count years], COUNT(e.sac) [count events] 
-from fn_AdmitTotalWithMinimumYearCount ( 'RHSPA1', 3, '1/1/2012', '1/1/2015' ) a
+from fn_AdmitTotalWithMinimumYearCount ( @hospitalid, @yearrequirement, @start, @end  ) a
 join Client.Events e
   on e.ClientID = a.clientid
  and e.EventDate between @start and @end
