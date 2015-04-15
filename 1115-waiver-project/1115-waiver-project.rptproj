@@ -153,12 +153,16 @@
       <FullPath>wellness-and-recovery-unique-count.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>welness-clients-with-fundsource.rdl</Name>
+      <FullPath>welness-clients-with-fundsource.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>wrap-unique-count.rdl</Name>
       <FullPath>wrap-unique-count.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>welness-clients-with-fundsource.rdl</Name>
-      <FullPath>welness-clients-with-fundsource.rdl</FullPath>
+      <Name>wellness-unique-clients-with-events.rdl</Name>
+      <FullPath>wellness-unique-clients-with-events.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
