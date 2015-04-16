@@ -61,7 +61,6 @@ begin
 				, c.c_bd_hospid
 				, c.c_bd_admitdt
 				, c.c_bd_dischdt
-				--, b.c_bd_dischdt
 			from mis_c_bd_rec b
 			left join mis_c_bd_rec c
 			  on c.c_id = b.c_id
@@ -83,12 +82,10 @@ begin
 
 			 
 			where b.c_bd_admitdt between @adj_start and @adj_end
-			--and c.c_id = '004550'
 			group by c.c_id
 				, c.c_bd_hospid
 				, c.c_bd_admitdt
 				, c.c_bd_dischdt
-				--	, b.c_bd_dischdt
 
 			order by c.c_id
 				, c.c_bd_hospid
