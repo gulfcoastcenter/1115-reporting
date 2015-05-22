@@ -1,0 +1,6 @@
+select COUNT(*) from fn_IndexHospAdmitDateInRange(2, '10/1/2013', '12/31/2013') where hospid = 'RHSPA1'
+select COUNT(*) from fn_IndexHospAdmitDateInRange(2, '1/1/2014', '3/31/2014') where hospid = 'RHSPA1'
+select COUNT(*) from fn_IndexHospAdmitDateInRange(2, '4/1/2014', '6/30/2014') where hospid = 'RHSPA1'
+select COUNT(*) from fn_IndexHospAdmitDateInRange(2, '7/1/2014', '9/30/2014') where hospid = 'RHSPA1'
+select COUNT(*) from fn_IndexHospAdmitDateInRange(2, '10/1/2014', '12/31/2014') where hospid = 'RHSPA1'
+select COUNT(*) from fn_IndexHospAdmitDateInRange(2, '1/1/2015', '3/31/2015') where hospid = 'RHSPA1'
