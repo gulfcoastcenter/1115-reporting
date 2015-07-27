@@ -1,15 +1,11 @@
 
-GO
-/****** Object:  StoredProcedure [dbo].[ansaByRUandDate]    Script Date: 02/25/2015 09:16:56 ******/
--- test: exec ansaByRUandDate '3301,3302,3303,3401', '10/1/2014', '4/1/2015'
-
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+if OBJECT_ID ('ansaByRUandDate') is not null 
+	drop procedure [ansaByRUandDate]
+go
 
 Create procedure [dbo].[ansaByRUandDate]
 	@RuList as nvarchar(max),
+	@SacList as nvarchar(max) = null,
 	@StartDate as DateTime,
 	@EndDate as DateTime
 	
@@ -20,7 +16,7 @@ if object_id('tempdb..#tempClientList') is not null
 
 create table #tempClientList (id nvarchar(10))
 insert into #tempClientList
-exec uniqueClientEventsByRU @RuList, @StartDate, @Enddate
+exec uniqueClientEventsByRU @RuList, @saclist, @StartDate, @Enddate
 
 select a.*
 from ansa a
