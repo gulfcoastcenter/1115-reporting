@@ -97,6 +97,10 @@
       <FullPath>crisis-respite-client-unique-count.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>executive-financial-summary.rdl</Name>
+      <FullPath>executive-financial-summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>hospital-admit-totals.rdl</Name>
       <FullPath>hospital-admit-totals.rdl</FullPath>
     </ProjectItem>
@@ -165,8 +169,8 @@
       <FullPath>wrap-unique-count.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>executive-financial-summary.rdl</Name>
-      <FullPath>executive-financial-summary.rdl</FullPath>
+      <Name>saint-joe-hospital-followups.rdl</Name>
+      <FullPath>saint-joe-hospital-followups.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
